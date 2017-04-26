@@ -72,6 +72,8 @@ class FileProcessor(object):
         self.checker_state = None
         #: User provided option for hang closing
         self.hang_closing = options.hang_closing
+        #: Whether to allow visual indentation
+        self.no_visual = options.no_visual
         #: Character used for indentation
         self.indent_char = None
         #: Current level of indentation

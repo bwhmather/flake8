@@ -282,6 +282,27 @@
         hang-closing = True
 
 
+.. option:: --hang-closing
+
+    Toggle whether pycodestyle should only allow hanging indentation.  When
+    this is enabled, blocks must be indented by the normal indent amount,
+    rather than aligned to the opening bracket.
+
+    Command-line example:
+
+    .. prompt:: bash
+
+        flake8 --no-visual dir/
+
+    This **can** be specified in config files.
+
+    Example config file usage:
+
+    .. code-block:: ini
+
+        no_visual = True
+        no-visual = True
+
 .. option:: --ignore=<errors>
 
     Specify a list of codes to ignore. The list is expected to be

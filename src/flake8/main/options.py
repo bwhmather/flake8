@@ -102,6 +102,11 @@ def register_default_options(option_manager):
     )
 
     add_option(
+        '--no-visual', action='store_true', parse_from_config=True,
+        help="Force hanging indentation.",
+    )
+
+    add_option(
         '--ignore', metavar='errors', default=','.join(defaults.IGNORE),
         parse_from_config=True, comma_separated_list=True,
         help='Comma-separated list of errors and warnings to ignore (or skip).'

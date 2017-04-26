@@ -104,6 +104,7 @@ And you should see something like:
       --format=format       Format errors according to the chosen formatter.
       --hang-closing        Hang closing bracket instead of matching indentation
                             of opening bracket's line.
+      --no-visual           Force hanging indentation.
       --ignore=errors       Comma-separated list of errors and warnings to ignore
                             (or skip). For example, ``--ignore=E4,E51,W234``.
                             (Default: E121,E123,E126,E226,E24,E704)

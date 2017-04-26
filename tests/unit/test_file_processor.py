@@ -12,6 +12,7 @@ import pytest
 def options_from(**kwargs):
     """Generate a Values instances with our kwargs."""
     kwargs.setdefault('hang_closing', True)
+    kwargs.setdefault('no_visual', False)
     kwargs.setdefault('max_line_length', 79)
     kwargs.setdefault('verbose', False)
     kwargs.setdefault('stdin_display_name', 'stdin')
